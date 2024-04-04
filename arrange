@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd files
+
+for path in ./* ; do
+    mv ${path:2} ../${path:2:1}
+done
